@@ -13,6 +13,7 @@
         <module>provider7002</module>
         <module>consumer7003</module>
         <module>common-api</module>
+        <module>gateway7004</module>
     </modules>
 
     <properties>
