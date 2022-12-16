@@ -15,7 +15,7 @@ public class FeignController {
 
     @GetMapping("/provider")
     public String hello(String content){
-        return "call port" + port + ", content=" + content + ",";
+        return "call port2222" + port + ", content=" + content + ",";
     }
 
     @PostMapping("/provider-json")
