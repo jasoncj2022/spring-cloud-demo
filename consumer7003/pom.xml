@@ -37,8 +37,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.jason.cj</groupId>
+            <groupId>com.json.cj</groupId>
             <artifactId>common-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
