@@ -1,5 +1,6 @@
-package com.jason.cj.service;
+package com.jason.cj.wrapper;
 
+import com.jason.cj.service.FeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +14,6 @@ public class HelloWrapper {
     private FeignService feignService;
 
     public String sayHello(String content){
-        return feignService.hello(content);
+        return feignService.hello(content)  + "-wrapper";
     }
 }
