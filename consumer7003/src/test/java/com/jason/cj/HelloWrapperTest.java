@@ -2,6 +2,7 @@ package com.jason.cj;
 
 import com.jason.cj.service.FeignService;
 import com.jason.cj.wrapper.HelloWrapper;
+import org.apache.commons.lang.StringUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +10,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -50,5 +54,13 @@ public class HelloWrapperTest {
         String content = "111";
         result = helloWrapper.sayHello(content);
         assertEquals(result,"mock-111" + "-wrapper");
+    }
+
+    @Test
+    public void test(){
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        System.out.println(StringUtils.join(list,","));
     }
 }
